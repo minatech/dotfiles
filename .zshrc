@@ -97,12 +97,16 @@ alias egrep='egrep --color=auto'
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -C'
+alias l='ls -CF'
 
-export ALTERNATE_EDITOR=emacs EDITOR=emacsclient VISUAL=emacsclient
 ## you can always use the command "emacs" instead of "emacsclient -c"
 alias emc='emacsclient -c'
 alias emcn='emacsclient -n'
+
+export ALTERNATE_EDITOR=emacs
+export EDITOR=emacsclient
+export VISUAL=emacsclient
+
 stty stop undef
 
 export PATH=$PATH:~/bin
