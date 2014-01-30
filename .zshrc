@@ -108,5 +108,6 @@ export EDITOR=emacsclient
 export VISUAL=emacsclient
 
 stty stop undef
+tmux > /dev/null 2>&1
 
 export PATH=$PATH:~/bin
